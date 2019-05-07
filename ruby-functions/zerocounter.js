@@ -21,4 +21,3 @@ return val;
 
 console.log(zeros_count(42))
 console.log(count)
-console.log(int)
