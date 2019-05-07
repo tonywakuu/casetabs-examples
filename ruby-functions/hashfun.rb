@@ -10,7 +10,7 @@ end
 
 describe 'String to Hash converter' do
     it 'converts an array of strings to a hash, with the keys being the index and the value being the element' do
-        str = %Q{key:"[[value_1, value_2]","[value_3, value4]]", 5:"10:00AM"]}
+        str = %Q{"key:"[[value_1, value_2]","[value_3, value4]]""", "5:"10:00AM""}
         expect(str.index_hash).to eq({"key" => [["value_1", "value_2"],["value_3", "value4"]], 5=>"10:00AM"})
     end
 end
