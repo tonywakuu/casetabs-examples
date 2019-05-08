@@ -10,12 +10,12 @@ var val = "";
         let count = 0;
         for (let element of array)
             if (element === number) {
+                if (element !== number){
+                    break;
+                }
                 count++; 
             }
             return count;
-            // do{
-            //     count++; 
-            // }while (element === number) 
     }
     count = occur(int, 0);
     
