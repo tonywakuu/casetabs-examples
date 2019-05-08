@@ -12,7 +12,7 @@ describe 'String to Hash converter' do
     it 'converts an array of strings to a hash, with the keys being the index and the value being the element' do
         str = "key:{value_1, value_2},{value_3, value4}; 5:10:00AM"
         eval("{#{str.tr(';', ',')}}")
-        # string.scan(/(\w+):\s+([^;]+)/).map { |k,v| [k.to_sym, v.strip] }
+        # str.scan(/(\w+):\s+([^;]+)/).map { |k,v| [k.to_sym, v.strip] }
         # result = Hash[pairs]
     end
 end
